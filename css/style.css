@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #D3D3D3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 700px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 7px;
+    display: flex;
+}
+
+.uno, .dos, .tres, .cuatro, .cinco, .seis{
+    width: 15px;
+    height: 15px;
+    background-color: #111;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+/* organización de dado uno */
+.one{
+    justify-content: center;
+}
+
+/* organización de dado dos */
+.two{
+    justify-content: space-around;
+}
+/* aplica al dado cuatro */
+.arriba{
+    align-self: flex-start;
+    margin-top: 10px;
+}
+/* aplica al dado cuatro */
+.abajo{
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+/* organización dado tres */
+.three{
+    justify-content: space-evenly;
+}
+/* aplica al dado uno, cinco*/
+.centro{
+    align-self: center;
+}
+
+/* organización dado cuatro, cinco y seis*/
+.four, .five, .six{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* aplica para cinco y seis */
+.interno{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* aplica para dado cinco y seis*/
+.cuadro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.six{
+    flex-flow: column-reverse wrap-reverse;
+}
